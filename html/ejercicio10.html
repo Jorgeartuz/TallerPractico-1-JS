@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <script src="../js/ejercicio10.js"></script>
+</head>
+<body>
+    
+    <script>
+        var h1 = crearNodoTexto("h1", "Calculadora de IMC");
+
+        var inputPeso = crearNodoInput("number", "Peso (kg)");
+        var inputAltura = crearNodoInput("number", "Altura (m)");
+        var botonCalcular = crearNodoBoton("Calcular IMC", calcularIMC);
+        
+        var resultado = crearNodoTexto("div", "");
+        resultado.id = "resultado";
+
+        adicionarNodoBody(h1);
+        adicionarNodoBody(inputPeso);
+        adicionarNodoBody(inputAltura);
+        adicionarNodoBody(botonCalcular);
+        adicionarNodoBody(resultado);
+    </script>
+
+</body>
+</html>

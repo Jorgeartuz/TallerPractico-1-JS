@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseñas Seguras</title>
+    <script src="../js/ejercicio8.js"></script>
+</head>
+
+<body>
+
+    <script>
+        var h1 = crearNodoTexto("h1", "Generador de Contraseñas Seguras");
+
+        var inputLongitud = crearNodoInput("number", "Longitud de la Contraseña");
+        var inputMayusculas = crearNodoCheckbox("Incluir mayúsculas", "mayusculas");
+        var inputNumeros = crearNodoCheckbox("Incluir números", "numeros");
+        var inputEspeciales = crearNodoCheckbox("Incluir caracteres especiales", "especiales");
+
+        var botonGenerar = crearNodoBoton("Generar Contraseña", generarContrasena);
+
+        var resultado = crearNodoTexto("div", "");
+        resultado.id = "resultado";
+
+        adicionarNodoBody(h1);
+        adicionarNodoBody(inputLongitud);
+        adicionarNodoBody(inputMayusculas);
+        adicionarNodoBody(inputNumeros);
+        adicionarNodoBody(inputEspeciales);
+        adicionarNodoBody(botonGenerar);
+        adicionarNodoBody(resultado);
+    </script>
+
+</body>
+
+</html>

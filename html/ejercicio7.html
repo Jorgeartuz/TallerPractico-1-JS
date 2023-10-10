@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de gestión de libros</title>
+    <script src="../js/ejercicio7.js"></script>
+</head>
+<body>
+    
+    <script>
+        var h1 = crearNodoTexto("h1", "Calculadora de Interés Compuesto");
+
+        var inputCapitalInicial = crearNodoInput("number", "Capital Inicial");
+        var inputTasaInteres = crearNodoInput("number", "Tasa de Interés Anual (%)");
+        var inputPeriodoInversion = crearNodoInput("number", "Período de Inversión en Años");
+        
+        var botonCalcular = crearNodoBoton("Calcular", calcularInteresCompuesto);
+        
+        var resultado = crearNodoTexto("div", "");
+        resultado.id = "resultado";
+
+        adicionarNodoBody(h1);
+        adicionarNodoBody(inputCapitalInicial);
+        adicionarNodoBody(inputTasaInteres);
+        adicionarNodoBody(inputPeriodoInversion);
+        adicionarNodoBody(botonCalcular);
+        adicionarNodoBody(resultado);
+    </script>
+
+</body>
+</html>

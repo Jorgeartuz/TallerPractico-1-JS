@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Tabla de Multiplicar Interactiva</title>
+    <script src="../js/ejercicio4.js"></script>
+</head>
+<body>
+
+    <script>
+        var h1 = crearNodoTexto("h1", "Tabla de Multiplicar");
+
+        var inputNumero = crearNodoInput("number", "Seleccione un número");
+        var inputFilas = crearNodoInput("number", "Filas a mostrar");
+        
+        var botonMostrarTabla = crearNodoBoton("Mostrar Tabla", mostrarTablaMultiplicar);
+        
+        var resultado = crearNodoTexto("div", "");
+        resultado.id = "resultado";
+
+        adicionarNodoBody(h1);
+        adicionarNodoBody(inputNumero);
+        adicionarNodoBody(inputFilas);
+        adicionarNodoBody(botonMostrarTabla);
+        adicionarNodoBody(resultado);
+    </script>
+    
+</body>
+</html>

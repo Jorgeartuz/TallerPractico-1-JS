@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el número</title>
+    <script src="../js/ejercicio1.js"></script>
+</head>
+<body>
+
+<script>
+
+    var h1 = crearNodoTexto("h1", "Adivina el número");
+    var p = crearNodoTexto("p", "Intenta adivinar el número entre 1 y 100:");
+
+    adicionarNodoBody(h1);
+    adicionarNodoBody(p);
+    
+    var input = document.createElement("input");
+    input.type = "number";
+    input.id = "guess";
+    var button = document.createElement("button");
+    button.textContent = "Adivinar";
+    button.onclick = adivinaNumero;
+    var message = document.createElement("p");
+    message.id = "message";
+    adicionarNodoBody(input);
+    adicionarNodoBody(button);
+    adicionarNodoBody(message);
+</script>
+   
+</body>
+</html>

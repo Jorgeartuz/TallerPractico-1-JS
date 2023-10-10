@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de registro de estudiantes</title>
+    <script src="../js/ejercicio2.js"></script>
+</head>
+<body>
+
+    <script>
+
+        var h1 = crearNodoTexto("h1", "Sistema de Registro de Estudiantes");
+
+        var botonAgregarEstudiante = crearNodo("button");
+        botonAgregarEstudiante.textContent = "Agregar Estudiante";
+        botonAgregarEstudiante.onclick = mostrarFormularioAgregar;
+
+        var botonBuscarEstudiante = crearNodo("button");
+        botonBuscarEstudiante.textContent = "Buscar Estudiante";
+        botonBuscarEstudiante.onclick = mostrarFormularioBuscar;
+
+        var resultado = crearNodoTexto("div", "");
+        resultado.id = "resultado";
+
+        adicionarNodoBody(h1);
+        adicionarNodoBody(botonAgregarEstudiante);
+        adicionarNodoBody(botonBuscarEstudiante);
+        adicionarNodoBody(resultado);
+
+    </script>
+
+</body>
+</html>
